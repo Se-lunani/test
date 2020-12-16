@@ -1,0 +1,18 @@
+from urllib.request import urlretrieve
+
+import pandas as pd
+
+url = 'https://raw.githubusercontent.com/onaio/ona-tech/master/data/water_points.json'
+urlretrieve(url, 'ifd.csv')
+df_web = pd.read_csv('ifd.csv')
+
+# convert the list of dictionaries into a dataframe - table
+# do a for function to selected the tables created i.e
+# Add a binary index to to the table
+ # - to extract the non functional state.
+ # - to extract the water points per community.
+ # -Rank as per percentage of broken water points.
+ # - Rank of functional states
+
+
+ # still working on the solution.
